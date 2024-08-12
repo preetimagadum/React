@@ -1,0 +1,22 @@
+import React from 'react'
+import Cart from './Cart'
+class Products extends React.Component{
+    product;
+    constructor(props){
+        super(props);
+        console.log('First Constructor')
+        this.product={pids:101,
+                      pname:'samsung',
+                      price:6000,
+                      color:['p','r','b']
+                    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'
+        }
+    }
+    render(){
+        return <div>
+            <h2>Product Component</h2>
+            <Cart product={this.product}/>
+        </div>
+    }
+}
+export default Products
