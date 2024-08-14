@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
- import Property from './Property'
+ import Product from './Product'
 
 let App=()=>{
 
@@ -7,7 +7,7 @@ let App=()=>{
             <h1>App - Component</h1>
             
             <hr/>
-            <Property />
+            <Product />
             
            </Fragment>
     
