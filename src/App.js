@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
- import Property from './Property'
-
+ 
+import Employee from './Employee'
 let App=()=>{
 
     return <Fragment>
             <h1>App - Component</h1>
             
             <hr/>
-            <Property />
+            <Employee />
             
            </Fragment>
     
