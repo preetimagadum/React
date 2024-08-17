@@ -235,14 +235,25 @@ const Employee = () => {
         ]
         return <div>
                     <h4>Employee Data</h4>
-                    <table>
+                    <table border={2}>
                         <thead>
-                            <th>ID</th>
+                            <th>Id</th>
                             <th>Name</th>
                             <th>Email</th>
                         </thead>
+                        <tbody>
+                        {
+                            employees.map((emp)=>{
+                                return <tr>
+                                        <td>{emp.id}</td>
+                                        <td>{emp.name}</td>
+                                        <td>{emp.email}</td>
+                                        </tr>
+                            })
+                        }
+                        </tbody>
                     </table>
                 </div>
 }
 
-export default Employee
+export default Employee

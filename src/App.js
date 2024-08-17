@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react'
  
-import Employee from './Employee'
+import CompA from './CompA'
 let App=()=>{
 
     return <Fragment>
             <h1>App - Component</h1>
             
             <hr/>
-            <Employee />
+            <CompA />
             
            </Fragment>
     
