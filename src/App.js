@@ -5,6 +5,7 @@ import About from './Pages/About'
 import Services from './Pages/Services'
 import Contact from './Pages/Contact'
 import Users from './Pages/Users'
+import Registration from './Pages/Registration'
 const App = () => {
   return <div>
          <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
                         <li><Link to="/services" className='nav-link'>Services</Link></li>
                         <li><Link to="/contact" className='nav-link'>Contact</Link></li>
                         <li><Link to="/users" className='nav-link'>Users</Link></li>
+                        <li><Link to="/registration" className='nav-link'>Registration</Link></li>
                     </ul>
                 </div>
             </nav>
@@ -26,6 +28,7 @@ const App = () => {
                 <Route path="services" element={<Services/>}/>
                 <Route path="contact" element={<Contact/>}/>
                 <Route path="users" element={<Users/>}/>
+                <Route path="registration" element={<Registration/>}/>
             </Routes>
             </BrowserRouter>
           </div>
